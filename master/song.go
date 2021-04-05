@@ -15,3 +15,16 @@ type Song struct {
 	category Category
 	likes    int
 }
+
+func (c Category) toString() string {
+	switch c {
+	case jazz:
+		return "jazz";
+	case pop:
+		return "pop";
+	case rock:
+		return "rock";
+	default:
+		return "";
+	}
+}
